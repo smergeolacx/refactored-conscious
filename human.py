@@ -3,7 +3,7 @@ import pygame
 class Human(pygame.sprite.Sprite):
 	def __init__(self,first_name, last_name, Class, age, health):
 		super().__init__()
-		self.image = pygame.Surface((200,200))
+		self.image = pygame.Surface((10,10))
 		self.image.fill('white')
 		self.rect = self.image.get_rect(topleft = (100,100))
 		self.first_name =  first_name

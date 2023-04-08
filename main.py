@@ -21,7 +21,7 @@ while True:
 		if event.type == pygame.QUIT:
 			quit()
 			exit()
-	
+	# screen.fill("white")
 	human_group.draw(screen)
-
+	pygame.display.flip()
 	clock.tick(60)
