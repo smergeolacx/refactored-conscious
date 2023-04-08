@@ -1,10 +1,14 @@
 import pygame
 
-class Human:
+class Human(pygame.sprite.Sprite):
 	def __init__(self,first_name, last_name, Class, age, health):
+		super().__init__()
+		self.image = pygame.Surface((200,200))
+		self.image.fill('white')
+		self.rect = self.image.get_rect(topleft = (100,100))
 		self.first_name =  first_name
 		self.last_name = last_name
-		self.name = f"{self.first} {self.last_name}"
+		self.name = f"{self.first_name} {self.last_name}"
 		self.Class = Class
 		self.age = age
 		self.health = health
